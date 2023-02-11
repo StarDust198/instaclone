@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import minifaker from 'minifaker';
 import 'minifaker/locales/en';
-import { FakeUser } from '@/interfaces/fakeUser.interface';
+import { IFakeUser } from '@/interfaces/fakeUser.interface';
 import { Story } from './Story';
 
 type Props = {};
 
 export const Stories = (props: Props) => {
-  const [storyUsers, setStoryUsers] = useState<FakeUser[]>([]);
+  const [storyUsers, setStoryUsers] = useState<IFakeUser[]>([]);
 
   useEffect(() => {
     const newUsers = minifaker.array(20, (i) => ({
@@ -20,7 +20,7 @@ export const Stories = (props: Props) => {
   }, []);
 
   return (
-    <div>
+    <div className="flex space-x-2 p-6 mt-8 bg-white border-gray-200 border overflow-x-scroll rounded-sm scrollbar-none">
       {storyUsers.map((item) => (
         <Story key={item.id} {...item} />
       ))}

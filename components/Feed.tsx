@@ -1,3 +1,4 @@
+import { Posts } from './Posts';
 import { Stories } from './Stories';
 
 type Props = {};
@@ -9,6 +10,7 @@ export const Feed = (props: Props) => {
         <Stories />
 
         {/* Posts */}
+        <Posts />
       </section>
       <section>
         {/* Mini profile */}
