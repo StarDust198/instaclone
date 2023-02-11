@@ -1,10 +1,10 @@
 import Head from 'next/head';
 
-import { Header } from '@/components';
+import { Feed, Header } from '@/components';
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-gray-50 min-h-screen">
       <Head>
         <title>Instaclone</title>
         <meta
@@ -18,8 +18,9 @@ export default function Home() {
       <Header />
 
       {/* Feed */}
+      <Feed />
 
       {/* Modal */}
-    </>
+    </div>
   );
 }
