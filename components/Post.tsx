@@ -1,4 +1,9 @@
-import { EllipsisHorizontalIcon } from '@heroicons/react/24/outline';
+import {
+  EllipsisHorizontalIcon,
+  HeartIcon,
+  ChatBubbleLeftEllipsisIcon,
+  BookmarkIcon,
+} from '@heroicons/react/24/outline';
 
 import { IPost } from '@/interfaces/post.interface';
 
@@ -25,6 +30,15 @@ export const Post = ({
 
       {/* Post Image */}
       <img className="object-cover w-full" src={img} alt={caption} />
+
+      {/* Post Buttons */}
+      <div className="flex justify-between px-4 pt-4">
+        <div className="flex space-x-4">
+          <HeartIcon className="btn" />
+          <ChatBubbleLeftEllipsisIcon className="btn" />
+        </div>
+        <BookmarkIcon className="btn" />
+      </div>
     </div>
   );
 };
