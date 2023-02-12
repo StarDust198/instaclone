@@ -3,6 +3,7 @@ import {
   HeartIcon,
   ChatBubbleLeftEllipsisIcon,
   BookmarkIcon,
+  FaceSmileIcon,
 } from '@heroicons/react/24/outline';
 
 import { IPost } from '@/interfaces/post.interface';
@@ -39,6 +40,23 @@ export const Post = ({
         </div>
         <BookmarkIcon className="btn" />
       </div>
+
+      {/* Post comments */}
+      <p className="p-5 truncate">
+        <span className="font-bold mr-2">{username}</span>
+        {caption}
+      </p>
+
+      {/* Post Input Box */}
+      <form action="" className="flex items-center p-4">
+        <FaceSmileIcon className="h-7" />
+        <input
+          className="border-none flex-1 focus:ring-0"
+          type="text"
+          placeholder="Enter your comment..."
+        />
+        <button className="text-blue-400 font-bold">Post</button>
+      </form>
     </div>
   );
 };
