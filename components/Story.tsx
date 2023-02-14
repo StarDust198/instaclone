@@ -1,4 +1,4 @@
-import { IFakeUser } from '@/interfaces/fakeUser.interface';
+import { IFakeUser } from 'interfaces';
 
 export const Story = ({ img, username }: Omit<IFakeUser, 'id'>) => {
   return (

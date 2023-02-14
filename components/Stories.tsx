@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import minifaker from 'minifaker';
 import 'minifaker/locales/en';
-import { IFakeUser } from '@/interfaces/fakeUser.interface';
-import { Story } from './Story';
+
+import { IFakeUser } from 'interfaces';
+import { Story } from 'components';
 
 type Props = {};
 
@@ -16,7 +17,6 @@ export const Stories = (props: Props) => {
       id: i,
     }));
     setStoryUsers(newUsers);
-    console.log(newUsers);
   }, []);
 
   return (

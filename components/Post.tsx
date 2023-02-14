@@ -6,7 +6,7 @@ import {
   FaceSmileIcon,
 } from '@heroicons/react/24/outline';
 
-import { IPost } from '@/interfaces/post.interface';
+import { IPost } from 'interfaces';
 
 export const Post = ({
   img,

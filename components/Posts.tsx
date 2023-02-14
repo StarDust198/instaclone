@@ -1,5 +1,5 @@
-import { IPost } from '@/interfaces/post.interface';
-import { Post } from './Post';
+import { IPost } from 'interfaces';
+import { Post } from 'components';
 
 type Props = {};
 

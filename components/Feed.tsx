@@ -1,6 +1,4 @@
-import { MiniProfile } from './MiniProfile';
-import { Posts } from './Posts';
-import { Stories } from './Stories';
+import { MiniProfile, Posts, Stories, Suggestions } from 'components';
 
 type Props = {};
 export const Feed = (props: Props) => {
@@ -19,6 +17,7 @@ export const Feed = (props: Props) => {
           <MiniProfile />
 
           {/* Suggestions */}
+          <Suggestions />
         </div>
       </section>
     </main>
